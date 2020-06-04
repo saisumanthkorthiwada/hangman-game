@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>General Knowledge</title>
+    <link rel="stylesheet" href="gk.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <img src="menu.png" height="20px" width="20px" class="img">
+        </label>
+        <label class="logo">Hangman Game</label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a class="active" href="vocabulary.html">Vocabulary</a></li>
+            <li><a class="active" href="entertainment.html">Entertainment</a></li>
+            <li><a class="active" href="gk.html">General Knowledge</a></li>
+            <li><a class="active" href="sports.html">Sports</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <div class="level">
+            <button onclick="easyLevel()" id="easy">Easy</button>
+            <button onclick="mediumLevel()" id="medium">Medium</button>
+            <button onclick="hardLevel()" id="hard">Hard</button>
+        </div>
+
+        
+        
+        <h1 class="description">General Knowledge</h1>
+        <div class="float-right">Wrong Guesses : <span id="mistakes">0</span> of <span id="maxWrong"></span></div>
+        <!-- <br>
+        <br>
+        <br>
+        <br> -->
+        <div class="text-center">
+            <img src="hg0.png" id="hangmanPic" height="300px">
+            <p id="wordMeaning" class="wordMeaning"></p>
+            <p id="wordSpotLight"></p>
+            <br>
+            <div id="keyboard" class="btnkeys"></div>
+            <div id="display"></div>
+            <button id='rstbtn' class="rstbtn" onclick="reset()">Quit</button>
+        </div>
+
+    </div>
+    
+    <script src="gk.js"></script>
+</body>
+</html>

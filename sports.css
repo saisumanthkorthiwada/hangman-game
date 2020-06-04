@@ -1,0 +1,250 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.float-right{
+    float: right;
+    padding-right: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: end;
+}
+
+#wordSpotLight{
+    font-size: 40px;
+}
+
+.wordMeaning{
+    padding: 15px 0px;
+}
+
+
+
+.btnkeys button{
+    background-color: rgb(59, 186, 236);
+    color: black;
+    font-size: 25px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 15px 15px;
+}
+
+.btnkeys :hover{
+    background-color: white;
+}
+.btnkeys :disabled{
+    background-color:rgb(214, 197, 197);
+}
+
+.rstbtn{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.description{
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 20px;
+}
+
+.container .level {
+    background-color: rgb(121, 186, 189);
+    text-align: center;    
+    margin-bottom: 20px;
+    padding-top: 60px;
+}
+
+#easy{
+    background-color: white;
+}
+
+.container .level button{
+    background-color:rgb(121, 186, 189);
+    border: none;
+    cursor: pointer;;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 10px;
+}
+
+/* .container .level button:hover{
+    background-color: cyan;
+} */
+
+#wordMeaning{
+    font-size: 20px;
+}
+
+nav{
+    background-color: rgba(31, 71, 182, 0.699);
+    height: 60px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    color: rgb(255, 249, 249);
+    font-weight: bolder;
+    font-size: 40px;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 0px;
+    float: left;
+}
+
+.container{
+    background-color: rgba(77, 172, 172, 0.219);
+}
+
+nav ul{
+    float: right;
+    padding-top: 6px;
+    margin-right: 30px;
+}
+
+nav ul li{
+    display: inline-flex;
+} 
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-left: 10px;
+    padding: 6px 10px;
+}
+
+a:hover,a:active{
+    color: rgb(24, 22, 22);
+    background-color: rgb(255, 255, 255);
+    transition: 0.25s;
+}
+
+.checkbtn{
+    float: right;
+    padding-top: 20px;
+    padding-right: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ul{
+    top: -1000px;
+    transition: 0.3s;
+}
+
+
+
+@media (max-width:1000px){
+    .logo{
+        font-size: 60px;
+        padding-left: 20px;
+        width: 50%;
+        padding-top: 10px;
+        /* margin-bottom: 0px; */
+        padding-bottom: 25px;
+    }
+    .checkbtn{
+        display: block;
+        padding-right: 20px;
+    }
+    .img{
+        height: 60px;
+        width: 60px;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        height: 100px;
+    }
+    nav ul{
+        margin-top: 10px;
+        position: relative;
+        width: 100%;
+        top: -700%;
+        text-align: center;
+        transition: 0.2s;
+        margin: 0px;
+    }
+    nav ul li{
+        display: block;
+        padding: 30px 50px;       
+        background-color: rgb(81, 82, 83);
+        opacity: 95%;
+
+    }
+    nav ul li a{
+        font-size: 40px;
+        padding: 20px 50px;
+        border-radius: 25px;
+    }
+    .btnkeys button{
+        font-size: 45px;
+        border-radius: 8px;
+        padding: 20px 40px;
+        margin: 26px;
+    }
+    .rstbtn{
+        font-size: 45px;
+        padding: 20px 50px;
+        margin-top: 70px;
+        border-radius: 8px;
+        margin-bottom: 100px;
+    }
+    #display{
+        font-size: 80px;
+    }
+
+
+
+    #check:checked ~ul{
+        top: -20px;
+        transition: 0.3s;
+    }
+    .container .level{
+        padding-top: 100px;
+        height: 125px;
+        background-color: rgb(121, 186, 189);
+    }
+    .container .level button{
+        font-size: 40px;
+        border-radius: 10px;
+        padding: 15px 20px;
+        margin: 20px 10px;
+    }
+    .float-right{
+        padding-right: 30px;
+        font-size: 40px;
+        padding-bottom: 20px;
+        font-weight: bold;
+    }
+    #wordSpotLight{
+        font-size: 80px;
+    }
+    #wordMeaning{
+        padding: 20px 0px;
+        font-size: 60px;
+    }
+}
+
